@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_lifo"
+        android:icon="@drawable/home"
+        android:title="首页" />
+    <item
+        android:id="@+id/item_fosuo"
+        android:icon="@drawable/renwudai"
+        android:title="任务袋" />
+    <item
+        android:id="@+id/item_ai"
+        android:icon="@drawable/xiaoxi"
+        android:title="消息" />
+    <item
+        android:id="@+id/item_wenfo"
+        android:icon="@drawable/wode"
+        android:title="我的" />
+
+</menu>

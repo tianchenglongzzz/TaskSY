@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+   android:layout_alignParentRight="true"
+    android:layout_below="@+id/tv_money"
+    android:layout_marginTop="40dp"
+    android:id="@+id/lay_d"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/xiugai"
+         android:paddingRight="10dp"
+         android:paddingLeft="10dp"
+         android:textColor="@color/colorWhite"
+         android:text="修改"
+         android:background="@drawable/sp_btn_kelingqu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"></TextView>
+     <TextView
+         android:layout_toRightOf="@id/xiugai"
+         android:id="@+id/tv_zhiding"
+         android:layout_marginLeft="5dp"
+         android:paddingRight="10dp"
+         android:paddingLeft="10dp"
+         android:textColor="@color/colorWhite"
+         android:text="置顶"
+         android:background="@drawable/sp_btn_kelingqu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"></TextView>
+     <TextView
+         android:layout_toRightOf="@id/tv_zhiding"
+         android:id="@+id/tv_tuijian"
+         android:layout_marginLeft="5dp"
+         android:paddingRight="10dp"
+         android:paddingLeft="10dp"
+         android:textColor="@color/colorWhite"
+         android:text="推荐"
+         android:background="@drawable/sp_btn_kelingqu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"></TextView>
+     <TextView
+         android:layout_toRightOf="@id/tv_tuijian"
+         android:visibility="gone"
+         android:id="@+id/tv_delete"
+         android:layout_marginLeft="5dp"
+         android:paddingRight="10dp"
+         android:paddingLeft="10dp"
+         android:textColor="@color/colorWhite"
+         android:text="删除"
+         android:background="@drawable/sp_btn_kelingqu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"></TextView>
+
+
+</RelativeLayout>

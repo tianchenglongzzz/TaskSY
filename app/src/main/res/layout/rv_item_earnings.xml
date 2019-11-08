@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round"
+            android:id="@+id/img_header"
+            android:layout_width="50dp"
+            android:layout_height="50dp"></ImageView>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img_header"
+            android:textSize="15sp"
+            android:text="我是标题"
+            android:textColor="@color/colorTextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <!--这里应该有个流式布局-->
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_alignParentRight="true"
+            android:text="+20"
+            android:textColor="@color/colorRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img_header"
+            android:id="@+id/tv_task_title"
+            android:layout_below="@id/tv_title"
+            android:text="下载注册"
+            android:background="@drawable/sp_ed_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

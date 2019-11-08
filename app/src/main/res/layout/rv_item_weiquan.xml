@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_height="@dimen/dp_60">
+     <ImageView
+         android:src="@mipmap/ic_launcher_round"
+         android:id="@+id/img_header"
+         android:layout_width="@dimen/dp_50"
+         android:layout_height="@dimen/dp_50"></ImageView>
+    <TextView
+        android:textSize="15sp"
+    android:layout_marginLeft="20dp"
+    android:layout_toRightOf="@+id/img_header"
+    android:text="举报我的任务"
+    android:id="@+id/tv_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorHintGray"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/img_header"
+        android:layout_below="@id/tv_title"
+        android:text="举报我的任务"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorRed"
+        android:text="以举报"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <View
+        android:id="@+id/v_1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorHintGray"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"></View>
+</RelativeLayout>

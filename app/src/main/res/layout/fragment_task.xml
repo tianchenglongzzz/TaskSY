@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindow"
+
+    android:orientation="vertical"
+    tools:context=".ui.fragement.TaskFragment">
+   <include
+       layout="@layout/action_bar_layout"
+       ></include>
+  <com.androidkun.xtablayout.XTabLayout
+      android:id="@+id/xtab"
+      android:background="@color/colorWhite"
+      app:xTabIndicatorColor="@color/colorOrange2"
+      app:xTabTextSelectedBold="true"
+      app:xTabTextColor="@color/colorTextGray"
+      app:xTabDisplayNum="3"
+      app:xTabIndicatorWidth="30dp"
+      app:xTabSelectedTextColor="@color/colorOrange2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  </com.androidkun.xtablayout.XTabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

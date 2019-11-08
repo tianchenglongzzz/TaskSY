@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pai_hang_background"
+    tools:context=".ui.activity.RankingActivity">
+    <ImageView
+        android:id="@+id/goback"
+        android:layout_margin="@dimen/dp_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/witer_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <TextView
+        android:textColor="@color/color_white"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/sp_20"
+        android:text="排行旁"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_150"
+        android:orientation="vertical"
+         app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab"
+        app:xTabIndicatorColor="@color/colorOrange2"
+        app:xTabTextSelectedBold="true"
+        app:xTabTextColor="@color/colorTextGray"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:paddingTop="@dimen/sp_20"
+
+
+        android:background="@drawable/sp_btn_witer"
+        app:xTabDisplayNum="2"
+        app:xTabIndicatorWidth="30dp"
+        app:xTabSelectedTextColor="@color/colorOrange2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.androidkun.xtablayout.XTabLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/sp_btn_witer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/sp_40"
+            tools:ignore="MissingConstraints"></androidx.recyclerview.widget.RecyclerView></LinearLayout>
+  <ImageView
+      app:layout_constraintRight_toRightOf="parent"
+      android:src="@mipmap/boy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:ignore="MissingConstraints"></ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>
